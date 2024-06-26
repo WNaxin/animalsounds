@@ -20,16 +20,14 @@ animal_sounds <- function(animal, sound = NULL) {
     )
   }
   if (is.null(sound)){
-    paste0("The ", animal, " makes no sound.")
+    return(paste0("The ", animal, " makes no sound."))
   }
-  else{
-    if (!rlang::is_character(sound, n = 1)) {
-      cli::cli_abort(
-        c("{.var sound} must be a {.cls character} vector of length 1!",
-          "i" = "It was {.type {sound}} of length {length(sound)} instead."),
-        class = "error_not_single_string"
-      )
-    }
-    paste0("The ", animal, " goes ", sound, "!")
+  if (!rlang::is_character(sound, n = 1)) {
+    cli::cli_abort(
+      c("{.var sound} must be a {.cls character} vector of length 1!",
+        "i" = "It was {.type {sound}} of length {length(sound)} instead."),
+      class = "error_not_single_string"
+    )
   }
+  paste0("The ", animal, " goes ", sound, "!")
 }

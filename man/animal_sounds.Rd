@@ -15,7 +15,7 @@ animal_sounds(animal, sound)
 a sentence in the format of what the animal says
 }
 \description{
-Outputs a sentence of what sounds a given animal makes.
+Outputs a sentence of what \strong{sounds} a given \emph{animal} makes using \link[=paste0]{this function}.
 }
 \examples{
 animal_sounds("dog", "woof")

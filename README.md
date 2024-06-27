@@ -4,6 +4,8 @@
 # animalsounds
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/WNaxin/animalsounds/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/WNaxin/animalsounds/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of animalsounds is to link animals with their sounds.

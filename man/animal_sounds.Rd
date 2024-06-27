@@ -4,7 +4,7 @@
 \alias{animal_sounds}
 \title{Animal Sounds Sentence Maker}
 \usage{
-animal_sounds(animal, sound)
+animal_sounds(animal, sound = NULL)
 }
 \arguments{
 \item{animal}{name for the animal}
